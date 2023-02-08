@@ -53,7 +53,7 @@ app.delete('/notes/:id',(req,res)=>{
     })
     .catch((err)=>res.status(500).send(err));
 });
- const port=2000;
+ const port=process.env.PORT||5000;
 
  db.connect().then((data)=>{ app.listen(port,()=> console.log(` server has started on port ${port}....\n ${data}`))
 }).catch((err)=>console.log(err));
