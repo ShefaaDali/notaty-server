@@ -4,7 +4,7 @@ const Note = require("./schemas/note");
 
 class Database {
   constructor() {
-    this.Url =process.env.MONGODB_URL || 'mongodb+srv://root:2000@notatydb.ey9g0vl.mongodb.net/?retryWrites=true&w=majority';
+    this.Url =process.env.MONGODB_URL || 'mongodb+srv://root:123@notatydb.ey9g0vl.mongodb.net/?retryWrites=true&w=majority';
     //this.Url = "mongodb+srv://root:root@cluster0.vxryvdp.mongodb.net/test?retryWrites=true&w=majority";
     //this.Url = 'mongodb://root:2000@ac-bdk99x2-shard-00-00.ey9g0vl.mongodb.net:27017,ac-bdk99x2-shard-00-01.ey9g0vl.mongodb.net:27017,ac-bdk99x2-shard-00-02.ey9g0vl.mongodb.net:27017/notatydb?ssl=true&replicaSet=atlas-hdelyt-shard-0&authSource=admin&retryWrites=true&w=majority';
   }
